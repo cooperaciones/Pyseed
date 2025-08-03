@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+  background: linear-gradient(135deg, #1b1b1b, #2c2c2c);
+  color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar (menú lateral) */
+.sidebar {
+  background-color: #2c3e50;
+  color: white;
+  width: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #34495e;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #1abc9c;
+}
+
+.sidebar .active {
+  background-color: #1abc9c;
+}
+
+/* Contenido principal */
+.content {
+  flex-grow: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2980b9;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #3498db;
+}
+
+.content {
+  transition: all 0.4s ease;
+}
